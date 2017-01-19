@@ -1,9 +1,9 @@
 import random
 
-correct = 'you guessed correctly!'
 too_low = 'too low'
 too_high = 'too high'
-
+correct = 'you guessed correctly!'
+num_guess = 'Guesses used: '
 
 def configure_range():
     '''Set the high and low values for the random number'''
@@ -34,13 +34,15 @@ def main():
 
     (low, high) = configure_range()
     secret = generate_secret(low, high)
-
+    guesses = 0
     while True:
         guess = get_guess()
+        guesses += 1
         result = check_guess(guess, secret)
         print(result)
 
         if result == correct:
+            print(num_guess + str(guesses))
             break
 
 
