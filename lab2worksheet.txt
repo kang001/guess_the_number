@@ -1,0 +1,18 @@
+Part 1:
+
+Follow the instructions with the slides to create an example repository, use the log, reflog, status, and reset commands.
+
+What's HEAD?
+The most recent commit
+
+What's the log, and the reflog? How are the two different?
+Log - is a list of commits
+Reflog - a detailed list of all commits, branch checkouts, merges, and resets
+The difference between the two is that a reflog will let you reference a specific commit
+
+What does HEAD@{4} mean?
+This references a specific commit that you can reset or rollback to directly 
+
+
+Push code to GitHub and submit a link to your repository.
+https://github.com/kang001/guess_the_number
